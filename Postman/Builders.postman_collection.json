@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "8c2d930a-9526-4fa7-a57c-c5004ec127d8",
+		"name": "Builders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Clarencio\",\r\n    \"cpf\":\"170.448.822-01\",\r\n    \"dataNascimento\":\"1995-05-11\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clientes?nome=Sakura&limite=2&pagina=0&cpf=435.398.608.00",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clientes?nome=Sakura&limite=2&pagina=0&cpf=435.398.608.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Sakura"
+						},
+						{
+							"key": "limite",
+							"value": "2"
+						},
+						{
+							"key": "pagina",
+							"value": "0"
+						},
+						{
+							"key": "cpf",
+							"value": "435.398.608.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clientes/343e6aef-dd97-446e-89ff-a3fc282c9575",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clientes/343e6aef-dd97-446e-89ff-a3fc282c9575",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"343e6aef-dd97-446e-89ff-a3fc282c9575"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clientes/1f4c7bc2-52a9-4cb1-ae46-65e4f0f533ab",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"nome\":\"Sonia\",\r\n    \"cpf\":\"435.398.608.00\",\r\n    \"dataNascimento\":\"1998-09-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/1f4c7bc2-52a9-4cb1-ae46-65e4f0f533ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"1f4c7bc2-52a9-4cb1-ae46-65e4f0f533ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clientes/1f4c7bc2-52a9-4cb1-ae46-65e4f0f533ab",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"jaquee\",\r\n    \"dataNascimento\": \"2020-09-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/1f4c7bc2-52a9-4cb1-ae46-65e4f0f533ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"1f4c7bc2-52a9-4cb1-ae46-65e4f0f533ab"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
